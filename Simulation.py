@@ -508,6 +508,10 @@ if __name__ == "__main__":
     mirror_best_m = (mirror_best[0]*1e3, mirror_best[1], mirror_best[2], mirror_best[3], mirror_best[4], mirror_best[5])
     panel_best_m = (panel_best[0]*1e3, panel_best[1], panel_best[2], panel_best[3], panel_best[4], panel_best[5])
 
+    # FORCE TEST GEOMETRY (close mirror + panel)
+    mirror_best = [7078, 0.001, 0, 0, 0, 0]   # LEO
+    panel_best  = [7078, 0.001, 0, 0, 0, 10]  # small phase offset
+    
     # Re-evaluate with long sim and finer steps
     print("\nRe-evaluating best candidate with high-fidelity simulation (this will be slower)...")
     avg_del_hf, avg_dir_hf, avg_ref_hf, times_hf, dir_series_hf, ref_series_hf, delivered_series_hf = compute_total_received_power(
