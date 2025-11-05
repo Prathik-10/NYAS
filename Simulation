@@ -1,0 +1,261 @@
+# --------------------------------------------------------------
+# ORBITAL PATH OPTIMIZATION WITH MIRROR REFLECTION MODEL (FAST DEBUG VERSION)
+# Purpose:
+#   Optimize orbital parameters for maximum average reflected solar power
+#   toward Earth, considering Earth's shadow cone and orbital dynamics.
+# --------------------------------------------------------------
+
+import numpy as np
+from scipy.integrate import solve_ivp
+from scipy.optimize import differential_evolution
+import matplotlib.pyplot as plt
+
+# --------------------------------------------------------------
+# CONSTANTS
+# --------------------------------------------------------------
+
+mu_earth = 3.986004418e14  # Earth's gravitational parameter (m^3/s^2)
+R_earth = 6371e3           # Earth's mean radius (m)
+AU = 1.495978707e11        # Astronomical Unit (m)
+solar_constant = 1361.0    # Solar constant (W/m^2)
+omega_earth = 7.2921159e-5 # Earth's rotation (rad/s)
+
+# Mirror parameters
+mirror_area = 100.0         # Mirror area in m²
+mirror_reflectivity = 0.9   # Reflectivity (fraction)
+earth_target_vector = np.array([R_earth + 500e3, 0, 0])  # target point over equator (example)
+
+# --------------------------------------------------------------
+# COE to State Vector Conversion
+# --------------------------------------------------------------
+
+def coe_to_state(a, e, i, raan, argp, nu):
+    p = a * (1 - e**2)
+    r_pf = (p / (1 + e * np.cos(nu))) * np.array([np.cos(nu), np.sin(nu), 0.0])
+    v_pf = np.sqrt(mu_earth / p) * np.array([-np.sin(nu), e + np.cos(nu), 0.0])
+    cos, sin = np.cos, np.sin
+    R3_w = np.array([[cos(argp), -sin(argp), 0],
+                     [sin(argp),  cos(argp), 0],
+                     [0, 0, 1]])
+    R1_i = np.array([[1, 0, 0],
+                     [0, cos(i), -sin(i)],
+                     [0, sin(i),  cos(i)]])
+    R3_O = np.array([[cos(raan), -sin(raan), 0],
+                     [sin(raan),  cos(raan), 0],
+                     [0, 0, 1]])
+    Q_pX = R3_O @ R1_i @ R3_w
+    r_eci = Q_pX @ r_pf
+    v_eci = Q_pX @ v_pf
+    return r_eci, v_eci
+
+# --------------------------------------------------------------
+# Two-body propagation
+# --------------------------------------------------------------
+
+def two_body(t, y):
+    rx, ry, rz, vx, vy, vz = y
+    r = np.array([rx, ry, rz])
+    rnorm = np.linalg.norm(r)
+    a = -mu_earth * r / rnorm**3
+    return [vx, vy, vz, a[0], a[1], a[2]]
+
+# --------------------------------------------------------------
+# Sun vector model (ECI)
+# --------------------------------------------------------------
+
+def sun_vector_eci(t_seconds):
+    year = 365.25 * 24 * 3600.0
+    ang = 2.0 * np.pi * (t_seconds % year) / year
+    sun = AU * np.array([np.cos(ang), np.sin(ang), 0.0])
+    return sun
+
+# --------------------------------------------------------------
+# Earth shadow cone geometry (penumbra/umbra check)
+# --------------------------------------------------------------
+
+def in_earth_shadow_cone(r_sat, sun_vec):
+    sun_dir = sun_vec / np.linalg.norm(sun_vec)
+    rs = np.linalg.norm(r_sat)
+    proj_len = np.dot(r_sat, -sun_dir)
+    if proj_len <= 0:
+        return False
+    d = np.linalg.norm(r_sat + proj_len * sun_dir)
+    cone_radius = R_earth * (1 - proj_len / np.linalg.norm(sun_vec))
+    return d < cone_radius
+
+# --------------------------------------------------------------
+# Mirror reflection model (specular)
+# --------------------------------------------------------------
+
+def reflected_power(r_sat, sun_vec):
+    """Returns effective reflected power toward Earth target."""
+    if in_earth_shadow_cone(r_sat, sun_vec):
+        return 0.0
+
+    sun_dir = -sun_vec / np.linalg.norm(sun_vec)  # From satellite to Sun
+    to_target = (earth_target_vector - r_sat)
+    dist_target = np.linalg.norm(to_target)
+    to_target /= dist_target
+
+    bisector = (sun_dir + to_target)
+    bisector /= np.linalg.norm(bisector)
+    cos_theta = np.dot(sun_dir, bisector)
+
+    if cos_theta <= 0:
+        return 0.0
+
+    power = solar_constant * mirror_area * mirror_reflectivity * (cos_theta ** 2)
+    return power / (4 * np.pi * dist_target**2)
+
+# --------------------------------------------------------------
+# Compute orbit performance
+# --------------------------------------------------------------
+
+def compute_orbit_performance(a, e, i_deg, raan_deg, argp_deg, M0_deg,
+                              t_span_hours=3, steps_per_orbit=200,
+                              mirror_mode=True):
+    """
+    t_span_hours   -> Total simulation duration in hours
+    steps_per_orbit -> Temporal resolution (more steps = smoother but slower)
+    total_steps    -> Total number of integration time samples (computed)
+    """
+
+    # Convert orbital elements to radians
+    i = np.radians(i_deg)
+    raan = np.radians(raan_deg)
+    argp = np.radians(argp_deg)
+    nu0 = np.radians(M0_deg)
+
+    # Orbital period and step calculation
+    n = np.sqrt(mu_earth / a**3)
+    T = 2 * np.pi / n                   # Orbital period in seconds
+    t_final = t_span_hours * 3600       # Total simulation duration in seconds
+    total_steps = int(steps_per_orbit * t_span_hours * 24 / (T / 3600))
+    t_eval = np.linspace(0, t_final, total_steps)
+
+    # Initial conditions
+    r0, v0 = coe_to_state(a, e, i, raan, argp, nu0)
+    y0 = np.hstack((r0, v0))
+
+    # Integrate orbital motion
+    sol = solve_ivp(two_body, (0, t_final), y0, t_eval=t_eval,
+                    rtol=1e-8, atol=1e-8, method='RK45')
+
+    r_vecs = sol.y[:3, :].T
+    times = sol.t
+
+    if mirror_mode:
+        power = np.zeros(len(times))
+        for idx, (r, tsec) in enumerate(zip(r_vecs, times)):
+            sun = sun_vector_eci(tsec)
+            power[idx] = reflected_power(r, sun)
+        avg_power = np.mean(power)
+        return avg_power, times, r_vecs, power
+    else:
+        sunlit = np.zeros(len(times), dtype=bool)
+        for idx, (r, tsec) in enumerate(zip(r_vecs, times)):
+            sun = sun_vector_eci(tsec)
+            if not in_earth_shadow_cone(r, sun):
+                sunlit[idx] = True
+        fraction = sunlit.mean()
+        return fraction, times, r_vecs, sunlit
+
+# --------------------------------------------------------------
+# Objective function for optimizer
+# --------------------------------------------------------------
+
+def objective(x):
+    a_km, e, i_deg, raan_deg, argp_deg, M0_deg = x
+    a = a_km * 1e3
+    if e < 0 or e >= 1:
+        return 1.0
+    perigee = a * (1 - e)
+    if perigee < (R_earth + 150e3):
+        return 1.0
+
+    # SHORTER SIMULATION FOR OPTIMIZATION SPEED
+    avg_power, _, _, _ = compute_orbit_performance(
+        a, e, i_deg, raan_deg, argp_deg, M0_deg,
+        t_span_hours=2,        # Duration per evaluation
+        steps_per_orbit=300,   # Temporal resolution per orbit
+        mirror_mode=True
+    )
+    return -avg_power  # Negative for maximization
+
+# --------------------------------------------------------------
+# Run optimization
+# --------------------------------------------------------------
+
+def optimize_orbit():
+    bounds = [
+        (R_earth/1e3 + 200, R_earth/1e3 + 2000),  # semi-major axis (km)
+        (0.0, 0.2),                               # eccentricity
+        (0.0, 180.0),                             # inclination (deg)
+        (0.0, 360.0),                             # RAAN (deg)
+        (0.0, 360.0),                             # argument of perigee (deg)
+        (0.0, 360.0)                              # mean anomaly (deg)
+    ]
+
+    # FAST DEBUG SETTINGS
+    result = differential_evolution(
+        objective, bounds,
+        maxiter=6,      # fewer generations for speed
+        popsize=8,      # smaller population
+        polish=True, seed=42
+    )
+    return result
+
+# --------------------------------------------------------------
+# MAIN EXECUTION
+# --------------------------------------------------------------
+
+if __name__ == "__main__":
+    a_demo = R_earth + 700e3
+
+    # DEMO RUN (short duration for testing)
+    avg_power, times, r_vecs, power = compute_orbit_performance(
+        a_demo, 0.0, 98.0, 0.0, 0.0, 0.0,
+        t_span_hours=3,       # ← total simulation duration
+        steps_per_orbit=200,  # ← time resolution per orbit
+        mirror_mode=True
+    )
+    print(f"Demo: average reflected power ≈ {avg_power:.3e} W/m² toward target over 3h")
+
+    print("Running optimizer (this should take only a few minutes)...")
+    res = optimize_orbit()
+    print("Optimization result (minimized value = -avg_reflected_power):")
+    print(res)
+
+    best = res.x
+    a_best = best[0]*1e3
+    print(f"Best a (km): {best[0]:.1f}, e: {best[1]:.4f}, i: {best[2]:.2f}°")
+
+    # FINAL HIGH-DETAIL EVALUATION
+    avg_power_best, times, r_vecs, power = compute_orbit_performance(
+        a_best, best[1], best[2], best[3], best[4], best[5],
+        t_span_hours=24,      # ← full-day analysis duration
+        steps_per_orbit=1000, # ← fine resolution for final plot
+        mirror_mode=True
+    )
+    print(f"Best avg reflected power ≈ {avg_power_best:.3e} W/m²")
+
+    # --------------------------------------------------------------
+    # Plot orbit and power variation
+    # --------------------------------------------------------------
+
+    fig = plt.figure(figsize=(8,6))
+    ax = fig.add_subplot(111, projection='3d')
+    ax.plot(r_vecs[:,0]/1e3, r_vecs[:,1]/1e3, r_vecs[:,2]/1e3, label='Orbit Path', lw=0.7)
+    ax.scatter(r_vecs[::50,0]/1e3, r_vecs[::50,1]/1e3, r_vecs[::50,2]/1e3,
+               c=power[::50], cmap='inferno', s=5, alpha=0.8, label='Reflected power intensity')
+    u = np.linspace(0, 2*np.pi, 40)
+    v = np.linspace(0, np.pi, 20)
+    x = R_earth/1e3 * np.outer(np.cos(u), np.sin(v))
+    y = R_earth/1e3 * np.outer(np.sin(u), np.sin(v))
+    z = R_earth/1e3 * np.outer(np.ones_like(u), np.cos(v))
+    ax.plot_surface(x, y, z, alpha=0.1, color='blue')
+    ax.set_xlabel('X (km)')
+    ax.set_ylabel('Y (km)')
+    ax.set_zlabel('Z (km)')
+    ax.legend()
+    plt.show()
