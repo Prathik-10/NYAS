@@ -472,7 +472,6 @@ def diagnostic_reflection_check(mirror_coe_m, panel_coe_m, num_mirrors=NUM_MIRRO
     }
 # ---------------------------------------------------------------------
 
-
 # ---------------------------------------------------------------------
 
 # -------------------------- MAIN -------------------------------------
@@ -525,8 +524,6 @@ if __name__ == "__main__":
         steps_per_orbit=STEPS_PER_ORBIT_FINAL
     )
 
-    
-
     # Print clearly labeled results
     print("\n\n================ BEST CONFIGURATION (OPTIMIZER) ================\n")
     print("Mirror orbit (best):")
@@ -569,7 +566,6 @@ if __name__ == "__main__":
                                             mirror_reflectivity_local=MIRROR_REFLECTIVITY,
                                             panel_area_local=PANEL_AREA)
     # (diag_stats dictionary also available for programmatic inspection)
-
     
     # Show time series plots of received power
     plt.figure(figsize=(10,5))
