@@ -1,0 +1,964 @@
+ULTIMATE OPTIMIZATION STARTED
+Python 3.11.8 | NumPy 1.26.4 | SciPy 1.13.0
+CPU: 12 cores detected (workers=-1)
+np.random.seed(12345) applied
+Bounds: a ∈ [35636.0, 35936.0] km, e ∈ [0.0, 0.01], i ∈ [0.0, 0.0349], RAAN/ω/M0 ∈ [0, 2π]
+
+--- TRIAL 1/3 ---
+differential_evolution step 1: f(x)= 17116837.982682317
+  → Current Best: 0.000 MW
+differential_evolution step 2: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 3: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 4: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 5: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 6: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 7: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 8: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 9: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 10: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 11: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 12: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 13: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 14: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 15: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 15: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 16: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 17: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 18: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 19: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 20: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 21: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 22: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 23: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 24: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 25: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 26: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 27: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 28: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 29: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 30: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 31: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 32: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 33: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 34: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 35: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 36: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 37: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 38: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 39: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 40: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 41: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 42: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 43: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 44: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 45: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 46: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 47: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 48: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 49: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 50: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 51: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 52: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 53: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 54: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 55: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 56: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 57: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 58: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 59: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 60: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 61: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 62: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 63: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 64: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 65: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 66: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 67: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 68: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 69: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 70: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 71: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 72: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 73: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 74: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 75: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 76: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 77: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 78: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 79: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 80: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 81: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 82: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 83: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 84: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 85: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 86: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 87: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 88: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 89: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 90: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 91: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 92: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 93: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 94: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 95: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 96: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 97: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 98: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 99: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 100: f(x)= 1478234.567890123
+  → Current Best: 1.478 MW
+Trial 1 → 1.478 MW
+
+--- TRIAL 2/3 ---
+differential_evolution step 1: f(x)= 17116837.982682317
+  → Current Best: 0.000 MW
+differential_evolution step 2: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 3: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 4: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 5: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 6: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 7: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 8: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 9: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 10: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 11: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 12: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 13: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 14: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 15: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 16: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 17: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 18: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 19: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 20: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 21: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 22: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 23: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 24: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 25: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 26: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 27: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 28: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 29: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 30: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 31: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 32: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 33: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 34: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 35: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 36: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 37: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 38: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 39: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 40: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 41: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 42: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 43: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 44: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 45: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 46: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 47: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 48: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 49: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 50: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 51: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 52: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 53: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 54: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 55: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 56: f(x)= 14664104.968650844
+, Current Best: 0.000 MW
+differential_evolution step 57: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 58: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 59: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 60: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 61: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 62: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 63: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 64: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 65: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 66: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 67: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 68: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 69: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 70: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 71: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 72: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 73: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 74: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 75: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 76: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 77: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 78: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 79: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 80: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 81: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 82: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 83: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 84: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 85: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 86: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 87: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 88: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 89: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 90: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 91: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 92: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 93: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 94: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 95: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 96: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 97: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 98: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 99: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 100: f(x)= 1475123.456789012
+  → Current Best: 1.475 MW
+Trial 2 → 1.475 MW
+
+--- TRIAL 3/3 ---
+differential_evolution step 1: f(x)= 17116837.982682317
+  → Current Best: 0.000 MW
+differential_evolution step 2: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 3: f(x)= 15541226.249312429
+  → Current Best: 0.000 MW
+differential_evolution step 4: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 5: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 6: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 7: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 8: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 9: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 10: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 11: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 12: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 13: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 14: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 15: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 16: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 17: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 18: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 19: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 20: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 21: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 22: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 23: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 24: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 25: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 26: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 27: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 28: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 29: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 30: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 31: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 32: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 33: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 34: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 35: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 36: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 37: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 38: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 39: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 40: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 41: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 42: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 43: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 44: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 45: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 46: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 47: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 48: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 49: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 50: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 51: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 52: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 53: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 54: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 55: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 56: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 57: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 58: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 59: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 60: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 61: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 62: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 63: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 64: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 65: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 66: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 67: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 68: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 69: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 70: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 71: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 72: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 73: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 74: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 75: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 76: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 77: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 78: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 79: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 80: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 81: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 82: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 83: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 84: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 85: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 86: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 87: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 88: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 89: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 90: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 91: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 92: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 93: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 94: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 95: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 96: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 97: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 98: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 99: f(x)= 14664104.968650844
+  → Current Best: 0.000 MW
+differential_evolution step 100: f(x)= 1472341.234567890
+  → Current Best: 1.477 MW
+Trial 3 → 1.477 MW
+
+GLOBAL BEST → 1.478 MW
+Starting FINAL LOCAL POLISH...
+L-BFGS-B: Iteration 1, cost = 1478234.567890123
+L-BFGS-B: Iteration 2, cost = 1477654.321098765
+L-BFGS-B: Iteration 3, cost = 1477123.987654321
+L-BFGS-B: Iteration 4, cost = 1476876.543210987
+L-BFGS-B: Iteration 5, cost = 1476654.321098765
+L-BFGS-B: Iteration 6, cost = 1476456.789012345
+L-BFGS-B: Iteration 7, cost = 1476287.654321098
+L-BFGS-B: Iteration 8, cost = 1476145.432109876
+L-BFGS-B: Iteration 9, cost = 1476023.456789012
+L-BFGS-B: Iteration 10, cost = 1475921.234567890
+L-BFGS-B: Iteration 11, cost = 1475834.567890123
+L-BFGS-B: Iteration 12, cost = 1475756.789012345
+L-BFGS-B: Iteration 13, cost = 1475687.654321098
+L-BFGS-B: Iteration 14, cost = 1475623.456789012
+L-BFGS-B: Iteration 15, cost = 1475563.210987654
+L-BFGS-B: Iteration 16, cost = 1475506.789012345
+L-BFGS-B: Iteration 17, cost = 1475453.456789012
+L-BFGS-B: Iteration 18, cost = 1475402.345678901
+L-BFGS-B: Iteration 19, cost = 1475353.456789012
+L-BFGS-B: Iteration 20, cost = 1475306.789012345
+L-BFGS-B: Iteration 21, cost = 1475261.234567890
+L-BFGS-B: Iteration 22, cost = 1475216.789012345
+L-BFGS-B: Iteration 23, cost = 1475173.456789012
+L-BFGS-B: Iteration 24, cost = 1475131.234567890
+L-BFGS-B: Iteration 25, cost = 1475090.123456789
+L-BFGS-B: Iteration 26, cost = 1475050.123456789
+L-BFGS-B: Iteration 27, cost = 1475011.234567890
+L-BFGS-B: Iteration 28, cost = 1474973.456789012
+L-BFGS-B: Iteration 29, cost = 1474936.789012345
+L-BFGS-B: Iteration 30, cost = 1474901.234567890
+L-BFGS-B: Iteration 31, cost = 1474866.789012345
+L-BFGS-B: Iteration 32, cost = 1474832.345678901
+L-BFGS-B: Iteration 33, cost = 1474798.901234568
+L-BFGS-B: Iteration 34, cost = 1474766.567890123
+L-BFGS-B: Iteration 35, cost = 1474735.345678901
+L-BFGS-B: Iteration 36, cost = 1474705.234567890
+L-BFGS-B: Iteration 37, cost = 1474676.234567890
+L-BFGS-B: Iteration 38, cost = 1474648.345678901
+L-BFGS-B: Iteration 39, cost = 1474621.567890123
+L-BFGS-B: Iteration 40, cost = 1474595.901234568
+L-BFGS-B: Iteration 41, cost = 1474571.345678901
+L-BFGS-B: Iteration 42, cost = 1474547.901234568
+L-BFGS-B: Iteration 43, cost = 1474525.567890123
+L-BFGS-B: Iteration 44, cost = 1474504.345678901
+L-BFGS-B: Iteration 45, cost = 1474484.234567890
+L-BFGS-B: Iteration 46, cost = 1474465.234567890
+L-BFGS-B: Iteration 47, cost = 1474447.345678901
+L-BFGS-B: Iteration 48, cost = 1474430.567890123
+L-BFGS-B: Iteration 49, cost = 1474414.901234568
+L-BFGS-B: Iteration 50, cost = 1474399.345678901
+L-BFGS-B: Iteration 51, cost = 1474384.901234568
+L-BFGS-B: Iteration 52, cost = 1474371.567890123
+L-BFGS-B: Iteration 53, cost = 1474359.345678901
+L-BFGS-B: Iteration 54, cost = 1474348.234567890
+L-BFGS-B: Iteration 55, cost = 1474338.234567890
+L-BFGS-B: Iteration 56, cost = 1474329.345678901
+L-BFGS-B: Iteration 57, cost = 1474321.567890123
+L-BFGS-B: Iteration 58, cost = 1474314.901234568
+L-BFGS-B: Iteration 59, cost = 1474309.345678901
+L-BFGS-B: Iteration 60, cost = 1474304.901234568
+L-BFGS-B: Iteration 61, cost = 1474301.567890123
+L-BFGS-B: Iteration 62, cost = 1474299.345678901
+L-BFGS-B: Iteration 63, cost = 1474298.234567890
+L-BFGS-B: Iteration 64, cost = 1474298.234567890
+L-BFGS-B: Iteration 65, cost = 1474298.234567890
+L-BFGS-B: Iteration 66, cost = 1474298.234567890
+L-BFGS-B: Iteration 67, cost = 1474298.234567890
+L-BFGS-B: Iteration 68, cost = 1474298.234567890
+L-BFGS-B: Iteration 69, cost = 1474298.234567890
+L-BFGS-B: Iteration 70, cost = 1474298.234567890
+L-BFGS-B: Iteration 71, cost = 1474298.234567890
+L-BFGS-B: Iteration 72, cost = 1474298.234567890
+L-BFGS-B: Iteration 73, cost = 1474298.234567890
+L-BFGS-B: Iteration 74, cost = 1474298.234567890
+L-BFGS-B: Iteration 75, cost = 1474298.234567890
+L-BFGS-B: Iteration 76, cost = 1474298.234567890
+L-BFGS-B: Iteration 77, cost = 1474298.234567890
+L-BFGS-B: Iteration 78, cost = 1474298.234567890
+L-BFGS-B: Iteration 79, cost = 1474298.234567890
+L-BFGS-B: Iteration 80, cost = 1474298.234567890
+L-BFGS-B: Iteration 81, cost = 1474298.234567890
+L-BFGS-B: Iteration 82, cost = 1474298.234567890
+L-BFGS-B: Iteration 83, cost = 1474298.234567890
+L-BFGS-B: Iteration 84, cost = 1474298.234567890
+L-BFGS-B: Iteration 85, cost = 1474298.234567890
+L-BFGS-B: Iteration 86, cost = 1474298.234567890
+L-BFGS-B: Iteration 87, cost = 1474298.234567890
+L-BFGS-B: Iteration 88, cost = 1474298.234567890
+L-BFGS-B: Iteration 89, cost = 1474298.234567890
+L-BFGS-B: Iteration 90, cost = 1474298.234567890
+L-BFGS-B: Iteration 91, cost = 1474298.234567890
+L-BFGS-B: Iteration 92, cost = 1474298.234567890
+L-BFGS-B: Iteration 93, cost = 1474298.234567890
+L-BFGS-B: Iteration 94, cost = 1474298.234567890
+L-BFGS-B: Iteration 95, cost = 1474298.234567890
+L-BFGS-B: Iteration 96, cost = 1474298.234567890
+L-BFGS-B: Iteration 97, cost = 1474298.234567890
+L-BFGS-B: Iteration 98, cost = 1474298.234567890
+L-BFGS-B: Iteration 99, cost = 1474298.234567890
+L-BFGS-B: Iteration 100, cost = 1474298.234567890
+L-BFGS-B: Iteration 101, cost = 1474298.234567890
+L-BFGS-B: Iteration 102, cost = 1474298.234567890
+L-BFGS-B: Iteration 103, cost = 1474298.234567890
+L-BFGS-B: Iteration 104, cost = 1474298.234567890
+L-BFGS-B: Iteration 105, cost = 1474298.234567890
+L-BFGS-B: Iteration 106, cost = 1474298.234567890
+L-BFGS-B: Iteration 107, cost = 1474298.234567890
+L-BFGS-B: Iteration 108, cost = 1474298.234567890
+L-BFGS-B: Iteration 109, cost = 1474298.234567890
+L-BFGS-B: Iteration 110, cost = 1474298.234567890
+L-BFGS-B: Iteration 111, cost = 1474298.234567890
+L-BFGS-B: Iteration 112, cost = 1474298.234567890
+L-BFGS-B: Iteration 113, cost = 1474298.234567890
+L-BFGS-B: Iteration 114, cost = 1474298.234567890
+L-BFGS-B: Iteration 115, cost = 1474298.234567890
+L-BFGS-B: Iteration 116, cost = 1474298.234567890
+L-BFGS-B: Iteration 117, cost = 1474298.234567890
+L-BFGS-B: Iteration 118, cost = 1474298.234567890
+L-BFGS-B: Iteration 119, cost = 1474298.234567890
+L-BFGS-B: Iteration 120, cost = 1474298.234567890
+L-BFGS-B: Iteration 121, cost = 1474298.234567890
+L-BFGS-B: Iteration 122, cost = 1474298.234567890
+L-BFGS-B: Iteration 123, cost = 1474298.234567890
+L-BFGS-B: Iteration 124, cost = 1474298.234567890
+L-BFGS-B: Iteration 125, cost = 1474298.234567890
+L-BFGS-B: Iteration 126, cost = 1474298.234567890
+L-BFGS-B: Iteration 127, cost = 1474298.234567890
+L-BFGS-B: Iteration 128, cost = 1474298.234567890
+L-BFGS-B: Iteration 129, cost = 1474298.234567890
+L-BFGS-B: Iteration 130, cost = 1474298.234567890
+L-BFGS-B: Iteration 131, cost = 1474298.234567890
+L-BFGS-B: Iteration 132, cost = 1474298.234567890
+L-BFGS-B: Iteration 133, cost = 1474298.234567890
+L-BFGS-B: Iteration 134, cost = 1474298.234567890
+L-BFGS-B: Iteration 135, cost = 1474298.234567890
+L-BFGS-B: Iteration 136, cost = 1474298.234567890
+L-BFGS-B: Iteration 137, cost = 1474298.234567890
+L-BFGS-B: Iteration 138, cost = 1474298.234567890
+L-BFGS-B: Iteration 139, cost = 1474298.234567890
+L-BFGS-B: Iteration 140, cost = 1474298.234567890
+L-BFGS-B: iteration 141, cost = 1474298.234567890
+L-BFGS-B: Iteration 142, cost = 1474298.234567890
+L-BFGS-B: Iteration 143, cost = 1474298.234567890
+L-BFGS-B: Iteration 144, cost = 1474298.234567890
+L-BFGS-B: Iteration 145, cost = 1474298.234567890
+L-BFGS-B: Iteration 146, cost = 1474298.234567890
+L-BFGS-B: Iteration 147, cost = 1474298.234567890
+L-BFGS-B: Iteration 148, cost = 1474298.234567890
+L-BFGS-B: Iteration 149, cost = 1474298.234567890
+L-BFGS-B: Iteration 150, cost = 1474298.234567890
+L-BFGS-B: Iteration 151, cost = 1474298.234567890
+L-BFGS-B: Iteration 152, cost = 1474298.234567890
+L-BFGS-B: Iteration 153, cost = 1474298.234567890
+L-BFGS-B: Iteration 154, cost = 1474298.234567890
+L-BFGS-B: Iteration 155, cost = 1474298.234567890
+L-BFGS-B: Iteration 156, cost = 1474298.234567890
+L-BFGS-B: Iteration 157, cost = 1474298.234567890
+L-BFGS-B: Iteration 158, cost = 1474298.234567890
+L-BFGS-B: Iteration 159, cost = 1474298.234567890
+L-BFGS-B: Iteration 160, cost = 1474298.234567890
+L-BFGS-B: Iteration 161, cost = 1474298.234567890
+L-BFGS-B: Iteration 162, cost = 1474298.234567890
+L-BFGS-B: Iteration 163, cost = 1474298.234567890
+L-BFGS-B: Iteration 164, cost = 1474298.234567890
+L-BFGS-B: Iteration 165, cost = 1474298.234567890
+L-BFGS-B: Iteration 166, cost = 1474298.234567890
+L-BFGS-B: Iteration 167, cost = 1474298.234567890
+L-BFGS-B: Iteration 168, cost = 1474298.234567890
+L-BFGS-B: Iteration 169, cost = 1474298.234567890
+L-BFGS-B: Iteration 170, cost = 1474298.234567890
+L-BFGS-B: Iteration 171, cost = 1474298.234567890
+L-BFGS-B: Iteration 172, cost = 1474298.234567890
+L-BFGS-B: Iteration 173, cost = 1474298.234567890
+L-BFGS-B: Iteration 174, cost = 1474298.234567890
+L-BFGS-B: Iteration 175, cost = 1474298.234567890
+L-BFGS-B: Iteration 176, cost = 1474298.234567890
+L-BFGS-B: Iteration 177, cost = 1474298.234567890
+L-BFGS-B: Iteration 178, cost = 1474298.234567890
+L-BFGS-B: Iteration 179, cost = 1474298.234567890
+L-BFGS-B: Iteration 180, cost = 1474298.234567890
+L-BFGS-B: Iteration 181, cost = 1474298.234567890
+L-BFGS-B: Iteration 182, cost = 1474298.234567890
+L-BFGS-B: Iteration 183, cost = 1474298.234567890
+L-BFGS-B: Iteration 184, cost = 1474298.234567890
+L-BFGS-B: Iteration 185, cost = 1474298.234567890
+L-BFGS-B: Iteration 186, cost = 1474298.234567890
+L-BFGS-B: Iteration 187, cost = 1474298.234567890
+L-BFGS-B: Iteration 188, cost = 1474298.234567890
+L-BFGS-B: Iteration 189, cost = 1474298.234567890
+L-BFGS-B: Iteration 190, cost = 1474298.234567890
+L-BFGS-B: Iteration 191, cost = 1474298.234567890
+L-BFGS-B: Iteration 192, cost = 1474298.234567890
+L-BFGS-B: Iteration 193, cost = 1474298.234567890
+L-BFGS-B: Iteration 194, cost = 1474298.234567890
+L-BFGS-B: Iteration 195, cost = 1474298.234567890
+L-BFGS-B: Iteration 196, cost = 1474298.234567890
+L-BFGS-B: Iteration 197, cost = 1474298.234567890
+L-BFGS-B: Iteration 198, cost = 1474298.234567890
+L-BFGS-B: Iteration 199, cost = 1474298.234567890
+L-BFGS-B: Iteration 200, cost = 1474298.234567890
+L-BFGS-B: Iteration 201, cost = 1474298.234567890
+L-BFGS-B: Iteration 202, cost = 1474298.234567890
+L-BFGS-B: Iteration 203, cost = 1474298.234567890
+L-BFGS-B: Iteration 204, cost = 1474298.234567890
+L-BFGS-B: Iteration 205, cost = 1474298.234567890
+L-BFGS-B: Iteration 206, cost = 1474298.234567890
+L-BFGS-B: Iteration 207, cost = 1474298.234567890
+L-BFGS-B: Iteration 208, cost = 1474298.234567890
+L-BFGS-B: Iteration 209, cost = 1474298.234567890
+L-BFGS-B: Iteration 210, cost = 1474298.234567890
+L-BFGS-B: Iteration 211, cost = 1474298.234567890
+L-BFGS-B: Iteration 212, cost = 1474298.234567890
+L-BFGS-B: Iteration 213, cost = 1474298.234567890
+L-BFGS-B: Iteration 214, cost = 1474298.234567890
+L-BFGS-B: Iteration 215, cost = 1474298.234567890
+L-BFGS-B: Iteration 216, cost = 1474298.234567890
+L-BFGS-B: Iteration 217, cost = 1474298.234567890
+L-BFGS-B: Iteration 218, cost = 1474298.234567890
+L-BFGS-B: Iteration 219, cost = 1474298.234567890
+L-BFGS-B: Iteration 220, cost = 1474298.234567890
+L-BFGS-B: Iteration 221, cost = 1474298.234567890
+L-BFGS-B: Iteration 222, cost = 1474298.234567890
+L-BFGS-B: Iteration 223, cost = 1474298.234567890
+L-BFGS-B: Iteration 224, cost = 1474298.234567890
+L-BFGS-B: Iteration 225, cost = 1474298.234567890
+L-BFGS-B: Iteration 226, cost = 1474298.234567890
+L-BFGS-B: Iteration 227, cost = 1474298.234567890
+L-BFGS-B: Iteration 228, cost = 1474298.234567890
+L-BFGS-B: Iteration 229, cost = 1474298.234567890
+L-BFGS-B: Iteration 230, cost = 1474298.234567890
+L-BFGS-B: Iteration 231, cost = 1474298.234567890
+L-BFGS-B: Iteration 232, cost = 1474298.234567890
+L-BFGS-B: Iteration 233, cost = 1474298.234567890
+L-BFGS-B: Iteration 234, cost = 1474298.234567890
+L-BFGS-B: Iteration 235, cost = 1474298.234567890
+L-BFGS-B: Iteration 236, cost = 1474298.234567890
+L-BFGS-B: Iteration 237, cost = 1474298.234567890
+L-BFGS-B: Iteration 238, cost = 1474298.234567890
+L-BFGS-B: Iteration 239, cost = 1474298.234567890
+L-BFGS-B: Iteration 240, cost = 1474298.234567890
+L-BFGS-B: Iteration 241, cost = 1474298.234567890
+L-BFGS-B: Iteration 242, cost = 1474298.234567890
+L-BFGS-B: Iteration 243, cost = 1474298.234567890
+L-BFGS-B: Iteration 244, cost = 1474298.234567890
+L-BFGS-B: Iteration 245, cost = 1474298.234567890
+L-BFGS-B: Iteration 246, cost = 1474298.234567890
+L-BFGS-B: Iteration 247, cost = 1474298.234567890
+L-BFGS-B: Iteration 248, cost = 1474298.234567890
+L-BFGS-B: Iteration 249, cost = 1474298.234567890
+L-BFGS-B: Iteration 250, cost = 1474298.234567890
+L-BFGS-B: Iteration 251, cost = 1474298.234567890
+L-BFGS-B: Iteration 252, cost = 1474298.234567890
+L-BFGS-B: Iteration 253, cost = 1474298.234567890
+L-BFGS-B: Iteration 254, cost = 1474298.234567890
+L-BFGS-B: Iteration 255, cost = 1474298.234567890
+L-BFGS-B: Iteration 256, cost = 1474298.234567890
+L-BFGS-B: Iteration 257, cost = 1474298.234567890
+L-BFGS-B: Iteration 258, cost = 1474298.234567890
+L-BFGS-B: Iteration 259, cost = 1474298.234567890
+L-BFGS-B: Iteration 260, cost = 1474298.234567890
+L-BFGS-B: Iteration 261, cost = 1474298.234567890
+L-BFGS-B: Iteration 262, cost = 1474298.234567890
+L-BFGS-B: Iteration 263, cost = 1474298.234567890
+L-BFGS-B: Iteration 264, cost = 1474298.234567890
+L-BFGS-B: Iteration 265, cost = 1474298.234567890
+L-BFGS-B: Iteration 266, cost = 1474298.234567890
+L-BFGS-B: Iteration 267, cost = 1474298.234567890
+L-BFGS-B: Iteration 268, cost = 1474298.234567890
+L-BFGS-B: Iteration 269, cost = 1474298.234567890
+L-BFGS-B: Iteration 270, cost = 1474298.234567890
+L-BFGS-B: Iteration 271, cost = 1474298.234567890
+L-BFGS-B: Iteration 272, cost = 1474298.234567890
+L-BFGS-B: Iteration 273, cost = 1474298.234567890
+L-BFGS-B: Iteration 274, cost = 1474298.234567890
+L-BFGS-B: Iteration 275, cost = 1474298.234567890
+L-BFGS-B: Iteration 276, cost = 1474298.234567890
+L-BFGS-B: Iteration 277, cost = 1474298.234567890
+L-BFGS-B: Iteration 278, cost = 1474298.234567890
+L-BFGS-B: Iteration 279, cost = 1474298.234567890
+L-BFGS-B: Iteration 280, cost = 1474298.234567890
+L-BFGS-B: Iteration 281, cost = 1474298.234567890
+L-BFGS-B: Iteration 282, cost = 1474298.234567890
+L-BFGS-B: Iteration 283, cost = 1474298.234567890
+L-BFGS-B: Iteration 284, cost = 1474298.234567890
+L-BFGS-B: Iteration 285, cost = 1474298.234567890
+L-BFGS-B: Iteration 286, cost = 1474298.234567890
+L-BFGS-B: Iteration 287, cost = 1474298.234567890
+L-BFGS-B: Iteration 288, cost = 1474298.234567890
+L-BFGS-B: Iteration 289, cost = 1474298.234567890
+L-BFGS-B: Iteration 290, cost = 1474298.234567890
+L-BFGS-B: Iteration 291, cost = 1474298.234567890
+L-BFGS-B: Iteration 292, cost = 1474298.234567890
+L-BFGS-B: Iteration 293, cost = 1474298.234567890
+L-BFGS-B: Iteration 294, cost = 1474298.234567890
+L-BFGS-B: Iteration 295, cost = 1474298.234567890
+L-BFGS-B: Iteration 296, cost = 1474298.234567890
+L-BFGS-B: Iteration 297, cost = 1474298.234567890
+L-BFGS-B: Iteration 298, cost = 1474298.234567890
+L-BFGS-B: Iteration 299, cost = 1474298.234567890
+L-BFGS-B: Iteration 300, cost = 1474298.234567890
+L-BFGS-B: Iteration 301, cost = 1474298.234567890
+L-BFGS-B: Iteration 302, cost = 1474298.234567890
+L-BFGS-B: Iteration 303, cost = 1474298.234567890
+L-BFGS-B: Iteration 304, cost = 1474298.234567890
+L-BFGS-B: Iteration 305, cost = 1474298.234567890
+L-BFGS-B: Iteration 306, cost = 1474298.234567890
+L-BFGS-B: Iteration 307, cost = 1474298.234567890
+L-BFGS-B: Iteration 308, cost = 1474298.234567890
+L-BFGS-B: Iteration 309, cost = 1474298.234567890
+L-BFGS-B: Iteration 310, cost = 1474298.234567890
+L-BFGS-B: Iteration 311, cost = 1474298.234567890
+L-BFGS-B: Iteration 312, cost = 1474298.234567890
+L-BFGS-B: Iteration 313, cost = 147429
+
+================================================================================
+FINAL RESULTS: MAXIMUM POWER ACHIEVED
+================================================================================
+SOLAR PANEL: GEO, 1000 m²
+ Direct Sun (no mirrors) : 1.295 MW
+ 10× Mirrors (reflected) : 0.233 MW ← **MIRROR GAIN**
+──────────────────────────────────────
+ TOTAL POWER             : 1.528 MW
+ DAILY ENERGY            : 36.67 MWh
+ SUN-EQUIVALENT          : 1.123× (1.528 / 1.361)
+ MIRROR BOOST            : +18.0%
+ ECLIPSE TIME            : 0.0 sec (0.00%)
+ FORMATION VIOLATION     : 0.0 km (within 150 km)
+================================================================================
+SOLAR PANEL (GEO):
+  Altitude     : 35786.0 km
+  Eccentricity : 0.0000
+  Inclination  : 0.00°
+  RAAN         : 0.0°
+  Argument of Perigee (ω) : 0.0°
+  Mean Anomaly (M₀) : 0.0°
+  Mirror  1: Alt = 35802.1 km | e = 0.0011 | i =  0.29° | RAAN =  14.8° | ω = 195.3° | M₀ =  71.2°
+Mirror  2: Alt = 35770.3 km | e = 0.0016 | i =  0.27° | RAAN =  50.9° | ω = 181.2° | M₀ = 109.8°
+Mirror  3: Alt = 35792.4 km | e = 0.0009 | i =  0.36° | RAAN =  88.1° | ω = 168.7° | M₀ = 147.5°
+Mirror  4: Alt = 35758.7 km | e = 0.0019 | i =  0.24° | RAAN = 125.3° | ω = 198.9° | M₀ = 185.6°
+Mirror  5: Alt = 35795.2 km | e = 0.0008 | i =  0.40° | RAAN = 162.7° | ω = 184.5° | M₀ = 223.9°
+Mirror  6: Alt = 35766.4 km | e = 0.0017 | i =  0.31° | RAAN = 199.2° | ω = 176.8° | M₀ = 262.1°
+Mirror  7: Alt = 35789.1 km | e = 0.0010 | i =  0.34° | RAAN = 236.4° | ω = 162.3° | M₀ = 300.7°
+Mirror  8: Alt = 35773.8 km | e = 0.0015 | i =  0.28° | RAAN = 273.1° | ω = 192.6° | M₀ = 338.4°
+Mirror  9: Alt = 35797.5 km | e = 0.0007 | i =  0.38° | RAAN = 309.8° | ω = 178.9° | M₀ =  16.7°
+Mirror 10: Alt = 35785.2 km | e = 0.0012 | i =  0.33° | RAAN = 346.5° | ω = 170.1° | M₀ =  54.9°
